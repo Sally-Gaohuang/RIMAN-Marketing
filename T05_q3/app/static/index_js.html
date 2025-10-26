@@ -1,0 +1,26 @@
+<!-- CSR version (fetches from /hello endpoint) -->
+<!doctype html>
+<html>
+<head>
+    <title>Hello World</title>
+    <!--
+    TCX2004 L09 Integration – Client-Side Rendering (CSR)
+    This script demonstrates dynamic DOM updates using fetch()
+    and JSON data from FastAPI endpoint /hello.
+    -->
+    <script>
+        //When the page loads, fetch data from /hello backend
+       fetch('/hello')
+        .then(response => response.json())  //Parse JSON response
+        .then(data => {
+            //Display backend message e.g. "Hello, WORLD! x3"
+            document.querySelector('h1').textContent = data.message;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+</head>
+<body>
+     <!-- Placeholder text replaced dynamically by JS -->
+     <h1>Loading...</h1>
+</body>
+</html>

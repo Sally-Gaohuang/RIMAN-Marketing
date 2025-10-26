@@ -1,0 +1,15 @@
+<!-- SSR version (renders from /hello.html) -->
+<!doctype html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+  <!--
+    TCX2004 L09 Integration – Server-Side Rendering (SSR)
+    This template is rendered by FastAPI before sending to browser.
+    Variables {{ name }} and {{ count }} are passed from main.py.
+  -->
+    <h1>Hello, {{ name.upper() }}! x{{count}}</h1>
+</body>
+</html>
