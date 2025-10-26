@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+header, section, footer {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  background: #0077cc;
+  color: white;
+  border-bottom: 4px solid #005fa3;
+}
+
+button {
+  background: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h1, h2 {
+  color: #0077cc;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  body { font-size: 14px; }
+  header { padding: 15px; }
+}
