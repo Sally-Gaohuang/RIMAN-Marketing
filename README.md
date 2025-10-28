@@ -1,32 +1,210 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/qE6drZGn)
-Use this repository to complete and submit your tutorial answers. 
-If you need to upload images, code, or other supporting files, please add them to this repository as needed.
+# 🧩 T05_q5 – Front-End Integration and Portfolio Enhancement
 
-# Declaration
+**Module:** TCX2004 Introduction to Application Development  
+**Student:** Sally Gao Linzhi  
+**Purpose:** Demonstrate HTML, CSS, and JavaScript integration for front-end design, incorporating dark mode and responsive layout.
 
-## AI Use Declaration
+---
 
-Students may be called for an interview to explain and demonstrate their understanding of the submitted work. Failure to do so may result in disciplinary action.
+## ⚙️ Folder Structure
 
-- [x] AI assistance (such as GitHub Copilot or ChatGPT) **was properly used** in preparing this submission.
-- [x] AI assistance **was not used** in preparing this submission.
+T05_q5/
+├─ index.html → Main webpage (HTML structure)
+├─ style.css → Styling and layout design
+├─ script.js → JavaScript for interactivity (dark mode toggle)
+└─ UX_reflection.md → UX analysis and wireframe layout
+---
 
-### If AI was used, briefly describe how it assisted you
 
-> Your response here. If not used, leave blank or write "Not applicable."
+---
 
-## Plagiarism Declaration
+## ▶️ Run Instructions
 
-- [ ] I declare that this submission is my own work and does not contain plagiarized content from other sources.
+### Option 1 – Local Browser
+Double-click `index.html` or open it in Chrome/Edge/Firefox.
 
-# Tutorial
+### Option 2 – VS Code Live Server
+1. Open the `T05_q5` folder in VS Code.  
+2. Right-click `index.html` → **“Open with Live Server.”**  
+3. The page will open at `http://127.0.0.1:5500/`.
 
-## Q1
+---
 
-### Part (a)
+## 💡 Expected Features
 
-Answer here.
+| Feature | Description |
+|----------|--------------|
+| Header | Displays name and title centered |
+| Projects | Grid layout with hover scale effect |
+| Dark Mode | Toggles background and text color dynamically |
+| Responsive Design | Adjusts layout for smaller screens |
+| Smooth Transitions | Uses CSS animations for theme change |
 
-## Q2
+---
 
-Answer here.
+## 🧠 HTML Design Techniques Learned
+
+- Used **semantic HTML5 tags** (`header`, `main`, `footer`) to organize page content logically.  
+- Linked **external CSS** for layout and design separation.  
+- Added **JavaScript interactivity** (dark mode toggle) to demonstrate dynamic styling via DOM manipulation.  
+- Followed **responsive design** practices (`<meta viewport>`, CSS grid, media queries).  
+- Ensured **visual hierarchy** using `h1`, `h2`, `h3` for readability and accessibility.
+
+---
+
+## 🔗 Front-End Integration Explanation
+
+JavaScript, HTML, and CSS work together to deliver interactivity:
+
+- **HTML** provides the structure (the button element).  
+- **CSS** defines both light and dark themes.  
+- **JavaScript** toggles the `.dark` class on `<body>` to switch themes dynamically.  
+
+This demonstrates **DOM manipulation**, **event handling**, and **dynamic styling** —  
+the three key pillars of front-end web design taught in **Lectures 9 & 10**.
+
+---
+
+## ✅ Submission Summary
+
+| File | Purpose |
+|------|----------|
+| `index.html` | Portfolio webpage (HTML structure) |
+| `style.css` | Styles and responsive layout |
+| `script.js` | Dark mode toggle and JS integration |
+| `UX_reflection.md` | UX reflection & improved wireframe |
+
+---
+
+
+---
+
+## ▶️ Run Instructions
+
+### Option 1 – Local Browser
+Double-click `index.html` or open it in Chrome/Edge/Firefox.
+
+### Option 2 – VS Code Live Server
+1. Open the `T05_q5` folder in VS Code.  
+2. Right-click `index.html` → **“Open with Live Server.”**  
+3. The page will open at `http://127.0.0.1:5500/`.
+
+---
+
+## 💡 Expected Features
+
+| Feature | Description |
+|----------|--------------|
+| Header | Displays name and title centered |
+| Projects | Grid layout with hover scale effect |
+| Dark Mode | Toggles background and text color dynamically |
+| Responsive Design | Adjusts layout for smaller screens |
+| Smooth Transitions | Uses CSS animations for theme change |
+
+---
+
+## 🧠 HTML Design Techniques Learned
+
+- Used **semantic HTML5 tags** (`header`, `main`, `footer`) to organize page content logically.  
+- Linked **external CSS** for layout and design separation.  
+- Added **JavaScript interactivity** (dark mode toggle) to demonstrate dynamic styling via DOM manipulation.  
+- Followed **responsive design** practices (`<meta viewport>`, CSS grid, media queries).  
+- Ensured **visual hierarchy** using `h1`, `h2`, `h3` for readability and accessibility.
+
+---
+
+## 🔗 Front-End Integration Explanation
+
+JavaScript, HTML, and CSS work together to deliver interactivity:
+
+- **HTML** provides the structure (the button element).  
+- **CSS** defines both light and dark themes.  
+- **JavaScript** toggles the `.dark` class on `<body>` to switch themes dynamically.  
+
+This demonstrates **DOM manipulation**, **event handling**, and **dynamic styling** —  
+the three key pillars of front-end web design taught in **Lectures 9 & 10**.
+
+---
+
+## ✅ Submission Summary
+
+| File | Purpose |
+|------|----------|
+| `index.html` | Portfolio webpage (HTML structure) |
+| `style.css` | Styles and responsive layout |
+| `script.js` | Dark mode toggle and JS integration |
+| `UX_reflection.md` | UX reflection & improved wireframe |
+
+---
+---
+
+## ▶️ Run Instructions
+
+### Option 1 – Local Browser
+Double-click `index.html` or open it in Chrome/Edge/Firefox.
+
+### Option 2 – VS Code Live Server
+1. Open the `T05_q5` folder in VS Code.  
+2. Right-click `index.html` → **“Open with Live Server.”**  
+3. The page will open at `http://127.0.0.1:5500/`.
+
+---
+
+## 💡 Expected Features
+
+| Feature | Description |
+|----------|--------------|
+| Header | Displays name and title centered |
+| Projects | Grid layout with hover scale effect |
+| Dark Mode | Toggles background and text color dynamically |
+| Responsive Design | Adjusts layout for smaller screens |
+| Smooth Transitions | Uses CSS animations for theme change |
+
+---
+
+## 🧠 HTML Design Techniques Learned
+
+- Used **semantic HTML5 tags** (`header`, `main`, `footer`) to organize page content logically.  
+- Linked **external CSS** for layout and design separation.  
+- Added **JavaScript interactivity** (dark mode toggle) to demonstrate dynamic styling via DOM manipulation.  
+- Followed **responsive design** practices (`<meta viewport>`, CSS grid, media queries).  
+- Ensured **visual hierarchy** using `h1`, `h2`, `h3` for readability and accessibility.
+
+---
+
+## 🔗 Front-End Integration Explanation
+
+JavaScript, HTML, and CSS work together to deliver interactivity:
+
+- **HTML** provides the structure (the button element).  
+- **CSS** defines both light and dark themes.  
+- **JavaScript** toggles the `.dark` class on `<body>` to switch themes dynamically.  
+
+This demonstrates **DOM manipulation**, **event handling**, and **dynamic styling** —  
+the three key pillars of front-end web design taught in **Lectures 9 & 10**.
+
+---
+
+
+## ✅ Submission Summary
+
+| File | Purpose |
+|------|----------|
+| `index.html` | Portfolio webpage (HTML structure) |
+| `style.css` | Styles and responsive layout |
+| `script.js` | Dark mode toggle and JS integration |
+| `UX_reflection.md` | UX reflection & improved wireframe |
+
+---
+
+“This CSS demonstrates modern front-end techniques:
+
+Responsive layouts using Grid (projects) and Flexbox (advertisement).
+
+Theme switching via .dark class toggling from JavaScript.
+
+Smooth transitions and keyframe animations for better user experience.
+
+Use of color gradients, shadows, and rounded edges to create a friendly interface.
+
+Separation of presentation (CSS) from structure (HTML) and behavior (JS), following the MVC design mindset.”
