@@ -1,4 +1,4 @@
-# T05_q5 – UX Reflection and Improved Wireframe
+#  UX Reflection and Improved Wireframe
 
 ---
 
@@ -7,67 +7,78 @@
 **Ask Yourself:** “What is the user’s motivation to be here in the first place?”
 
 **Answer:**  
-Users (such as recruiters or professors) visit my portfolio to quickly understand my background and skills.  
-Therefore, I placed my name and key role at the top and kept the layout clean and calm to reduce cognitive load.
+In the original design, users (such as recruiters or professors) visited my portfolio to quickly understand my background and skills.  
+In this updated version, the page also serves **a marketing purpose** — helping visitors (potential partners or customers) connect with **Ms Amanda**, a professional beauty consultant recruiting new partners.  
+Therefore, the design emphasizes **clarity, warmth, and trust** through soft colors, approachable tone, and visible contact calls-to-action (QR codes).
 
 ---
 
 ## 🖱️ Usability
 
-**Ask Yourself:** “Could you get the job done with less input from the user?”
+**Ask Yourself:** “Could the user get what they need with minimal effort?”  
 
 **Answer:**  
-Yes. The page has a simple scroll navigation and does not require any login or clicks to view content.  
-Each section has clear headings so users can find education or experience within seconds.
+Yes.  
+For Amanda’s recruitment advertisement, visitors can understand the message **without scrolling too much**.  
+The QR codes for **WeChat and WhatsApp** are directly visible, so users can **contact instantly** without navigating to another page.  
+Every important element — name, tagline, and call-to-action — appears **above the fold** (visible immediately upon loading).
 
 ---
 
 ## 🎨 Design
 
-**Ask Yourself:** “Does the design lead the user’s eyes to the right places?”
+**Ask Yourself:** “Does the design guide the user’s focus naturally?”  
 
 **Answer:**  
-Yes. The header uses a blue accent to draw attention first to my name, then section titles use consistent color hierarchy (`h2`).  
-Whitespace separates sections, making the page easy to scan on desktop and mobile.
+Yes.  
+The light **pink and gold tones** create a premium yet friendly feel that matches the beauty and wellness industry.  
+Soft gradients and diamond sparkles subtly draw the eye toward the advertisement center.  
+Clear text hierarchy ensures that the **headline, description, and contact buttons** stand out.  
+On mobile, layout stacks vertically to remain legible and attractive.
 
 ---
 
 ## ✍️ Copywriting
 
-**Ask Yourself:** “Is the biggest text the most important text?”
+**Ask Yourself:** “Is the most important text the most noticeable?”  
 
 **Answer:**  
-Yes. My name (`h1`) is largest, followed by section headings.  
-All text is clear and concise—no marketing phrases—so users can absorb information quickly.
+Yes.  
+The headline (“✨ RIMAN 团队招募合作伙伴 ✨”) is large, emotional, and encouraging.  
+Key benefits — like **创业辅导**, **培训支持**, and **团队合作** — are placed in bullet form for quick scanning.  
+The call-to-action button (“📞 联系 Ms Amanda 了解更多”) is visually distinct and reinforces the purpose of the page.
 
 ---
 
 ## 📊 Analysis
 
-**Ask Yourself:** “How will you measure this?”
+**Ask Yourself:** “How will you measure this design’s success?”  
 
 **Answer:**  
-If published online, I would use basic analytics (e.g., GitHub Pages view counts or Google Analytics) to see which sections are most visited and adjust layout based on user behaviour and scroll depth.
+If hosted on **GitHub Pages**, performance can be tracked through:
+- View count analytics (traffic data)
+- User behavior analysis (scroll depth, QR interactions)
+- Conversion rate (how many users contact via QR codes)
+
+This feedback would guide future improvements — such as refining messaging or testing button color for higher engagement.
 
 ---
 
-## 🧩 Improved Wireframe Layout
-```markdown
 ## 🧩 Improved Wireframe Layout
 
 ```plaintext
 [HEADER]
- ├── Name & Title (center)
+ ├── Brand / Name (center)
  ├── Dark-Mode Button (top-right)
+ ├── Language Toggle (top-left)
 
-[SECTIONS]
- ├── Contact Info (icons with links)
- ├── Education → short paragraph
- ├── Skills → two columns for tech & soft skills
- ├── Experience → bulleted achievements
- ├── Projects → cards with title + short desc
+[MAIN SECTION: ADVERTISEMENT]
+ ├── Title: "RIMAN 团队招募合作伙伴"
+ ├── Description Paragraphs
+ ├── Key Benefits (Bullets or Icons)
+ ├── Two QR Codes (WeChat & WhatsApp)
+ ├── Animated Sparkles (Diamonds)
+ ├── Call-to-Action Button ("联系 Ms Amanda")
 
 [FOOTER]
- └── Copyright © 2025
----
-
+ └── Copyright © 2025 RIMAN Team | Shared by Ms Amanda

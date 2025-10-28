@@ -1,102 +1,111 @@
 // ============================================================
-// 🌙 FRONT-END INTERACTION SCRIPT (script.js)
-// ============================================================
-// This JavaScript file adds two interactive features:
-// 1️⃣ Theme switching between Light ↔ Dark Mode
-// 2️⃣ Fade-in animation trigger when the advertisement section enters view
+// 💎 RIMAN 招商引流前端互动脚本 (script.js)
+// ------------------------------------------------------------
+// Features included:
+// 1️⃣ Light / Dark Mode Theme Toggle
+// 2️⃣ Smooth Fade-in Animation for Advertisement
+// 3️⃣ Dynamic “Coming Soon” Pop-up for Future Projects
+// 4️⃣ Optional Language Switch (English ⇄ 中文)
 // ============================================================
 
 
 // ------------------------------------------------------------
 // 1️⃣ DARK MODE TOGGLE LOGIC
 // ------------------------------------------------------------
+const themeButton = document.getElementById('toggleTheme');
 
-// Get the button element from HTML
-const button = document.getElementById('toggleTheme');
-
-// Add a click listener for theme switching
-button.addEventListener('click', () => {
-  // Toggle the 'dark' class on <body>
-  document.body.classList.toggle('dark');
-
-  // Change button text dynamically based on mode
-  button.textContent = document.body.classList.contains('dark')
-    ? '☀️ Light Mode'   // Dark mode is ON → show Light Mode label
-    : '🌙 Dark Mode';    // Dark mode is OFF → show Dark Mode label
-});
+if (themeButton) {
+  themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    themeButton.textContent = document.body.classList.contains('dark')
+      ? '☀️ Light Mode'
+      : '🌙 Dark Mode';
+  });
+}
 
 
 // ------------------------------------------------------------
-// 2️⃣ OPTIONAL: Insert extra CSS via JavaScript (advanced demo)
+// 2️⃣ ADVERTISEMENT SECTION – SCROLL ANIMATION
 // ------------------------------------------------------------
-// Demonstrates how JS can dynamically create CSS if needed.
-const style = document.createElement('style');
-style.textContent = `
-  .dark {
-    background-color: #121212;
-    color: #f0f0f0;
-  }
-  .dark header {
-    background-color: #222;
-    color: #fff;
-  }
-`;
-document.head.appendChild(style);
+// When #advertisement scrolls into view, trigger fade-in animation.
 
+const adSection = document.getElementById('advertisement');
 
-// ------------------------------------------------------------
-// 3️⃣ SCROLL-TRIGGERED ANIMATION (for RIMAN advertisement)
-// ------------------------------------------------------------
-// When the #advertisement section scrolls into view,
-// it will fade in smoothly using the CSS @keyframes fadeInUp.
-
-const ad = document.getElementById('advertisement');
-
-if (ad) {
+if (adSection) {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Trigger the CSS animation defined in style.css
-        ad.style.opacity = '1';
-        ad.style.animation = 'fadeInUp 1s ease forwards';
-        // Stop observing once animation triggered
-        observer.unobserve(ad);
+        adSection.style.opacity = '1';
+        adSection.style.animation = 'fadeInUp 1.2s ease forwards';
+        observer.unobserve(adSection);
       }
     });
-  });
-  observer.observe(ad);
+  }, { threshold: 0.3 }); // trigger when 30% visible
+
+  observer.observe(adSection);
 }
 
-// Show "Under Construction" message when a project is clicked
+
+// ------------------------------------------------------------
+// 3️⃣ PROJECT PLACEHOLDER ALERT
+// ------------------------------------------------------------
+// Display “Under Construction” pop-up when user clicks unfinished project.
 function showComingSoon(projectName) {
   alert(`🚧 ${projectName}\n正在建设中 / Under Construction...`);
 }
 
-// Language toggle
-const langButton = document.getElementById('langToggle');
+
+// ------------------------------------------------------------
+// 4️⃣ LANGUAGE TOGGLE BUTTON (可选)
+// ------------------------------------------------------------
+// Optional bilingual toggle between English & Chinese labels.
+const languageToggle = document.getElementById('languageToggle');
 let currentLang = 'en';
 
-langButton.addEventListener('click', () => {
-  currentLang = currentLang === 'en' ? 'zh' : 'en';
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = el.getAttribute(`data-${currentLang}`);
+if (languageToggle) {
+  languageToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'zh' : 'en';
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = el.getAttribute(`data-${currentLang}`);
+    });
+
+    // Update button label accordingly
+    languageToggle.textContent = currentLang === 'en' ? '🌐 中文' : '🌐 English';
   });
-});
+}
 
 
 // ------------------------------------------------------------
-// 🧠 UNDERSTANDING NOTES
+// 5️⃣ OPTIONAL: DYNAMIC DIAMOND SPARKLE ANIMATION CREATION
 // ------------------------------------------------------------
-// - getElementById(): connects JS to HTML elements
-// - addEventListener(): reacts to user actions
-// - classList.toggle(): adds/removes CSS class dynamically
-// - textContent: updates visible text in the DOM
-// - IntersectionObserver(): monitors if an element is visible in viewport
-// - style.animation: triggers CSS animation programmatically
+// Adds animated diamonds automatically inside #advertisement for shine effect.
+// This makes sure your sparkle effect always loads correctly.
+if (adSection) {
+  const sparklePositions = [
+    { top: '25px', left: '35px' },
+    { top: '45px', right: '50px' },
+    { bottom: '35px', left: '55px' },
+    { bottom: '30px', right: '60px' }
+  ];
+
+  sparklePositions.forEach(pos => {
+    const diamond = document.createElement('div');
+    diamond.classList.add('diamond');
+    Object.assign(diamond.style, pos);
+    adSection.appendChild(diamond);
+  });
+}
+
+
+// ------------------------------------------------------------
+// 🧠 RECAP
+// ------------------------------------------------------------
+// - Theme toggle adds/removes `.dark` on <body>
+// - Fade-in animation for Amanda’s marketing section triggers when visible
+// - Diamonds auto-added dynamically for glowing aesthetic
+// - "Under Construction" alert reused for portfolio items
+// - Optional bilingual toggle remains compatible with HTML data attributes
 //
-// ✅ KEY TAKEAWAY:
-//   JS controls BEHAVIOR,
-//   CSS controls APPEARANCE,
-//   HTML provides STRUCTURE.
-//   All three combine for full front-end integration.
+// ✅ Result:
+//   Smooth, elegant, and engaging interactive effects for RIMAN marketing.
 // ============================================================
