@@ -1,50 +1,91 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- =========================================================
+       ✅ HTML5 Document Declaration
+       ========================================================= -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sally Gao Linzhi – Portfolio</title>
+  <title>Sally Gao – Portfolio</title>
 
-  <!-- ✅ Link to your CSS file -->
+  <!-- =========================================================
+       ✅ External Files
+       ========================================================= -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- ✅ Link to your JavaScript file -->
   <script defer src="script.js"></script>
 </head>
 
 <body>
-  <!-- ===== HEADER ===== -->
+  <!-- =========================================================
+       🌐 LANGUAGE TOGGLE BUTTON
+       ========================================================= -->
+  <button id="languageToggle">🌐 中文</button>
+
+  <!-- =========================================================
+       🏷️ HEADER SECTION
+       ========================================================= -->
   <header>
-    <h1>Sally Gao Linzhi</h1>
-    <p>Senior HR Executive | NUS Business Analytics Undergraduate</p>
+    <h1> Sally's Ongoing Projects</h1>
+    <p>Senior HR | NUS Business Analytics Undergraduate</p>
+
+    <!-- Dark mode toggle -->
     <button id="toggleTheme">🌙 Dark Mode</button>
   </header>
 
+  <!-- =========================================================
+       📁 MAIN CONTENT
+       ========================================================= -->
   <main>
+
     <!-- ===== PROJECTS SECTION ===== -->
     <section id="projects">
       <h2>Projects</h2>
 
-      <div class="project-card">
+      <!-- Project 1 -->
+      <a href="#" class="project-card project1" onclick="showComingSoon('Insurance Comparison System')">
         <h3>Insurance Comparison System</h3>
         <p>FastAPI + MySQL project for TCX3901 (IP).</p>
-      </div>
+      </a>
 
-      <div class="project-card">
+      <!-- Project 2 -->
+      <a href="#" class="project-card project2" onclick="showComingSoon('Expense Sharing App')">
         <h3>Expense Sharing App</h3>
         <p>Web app integrating FastAPI backend and Fetch API frontend.</p>
-      </div>
+      </a>
 
-      <div class="project-card">
+      <!-- Project 3 -->
+      <a href="#" class="project-card project3" onclick="showComingSoon('Chinese Learning Platform')">
         <h3>Chinese Learning Platform</h3>
         <p>Concept design for a web-based Chinese learning interface.</p>
+      </a>
+    </section>
+
+    <!-- ===== RIMAN ADVERTISEMENT SECTION ===== -->
+    <section id="advertisement">
+      <div class="ad-content">
+        <img src="riman_poster.jpg" alt="RIMAN Team 招商广告" class="ad-image">
+
+        <div class="ad-text">
+          <h2>✨ RIMAN 团队招募合作伙伴 ✨</h2>
+          <p>
+            与 <strong>Ms Amanda</strong> 一起开启创业新旅程！<br><br>
+            我们相信美丽可以传递，成功可以分享。<br>
+            加入 RIMAN 团队，您将获得：<br>
+            💼 一对一创业辅导 · 🌸 专业培训支持 · 🤝 成熟团队协作 · 💰 稳定收益体系<br><br>
+            无论您是全职妈妈、上班族，还是想开创副业的自由职业者，<br>
+            RIMAN 欢迎您加入我们，共创美丽未来！
+          </p>
+          <a href="riman_en.html" class="ad-button">📞 Learn More in English</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- =========================================================
+       📜 FOOTER SECTION
+       ========================================================= -->
   <footer>
-    <p>© 2025 Sally Gao Linzhi – All Rights Reserved.</p>
+    <p>© 2025 Sally Gao – All Rights Reserved.</p>
   </footer>
 </body>
 </html>
