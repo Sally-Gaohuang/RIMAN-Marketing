@@ -1,7 +1,9 @@
 # 🧩 T05_q5 – Front-End Integration and Portfolio Enhancement
 
 **Module:** TCX2004 Introduction to Application Development  
+
 **Student:** Sally Gao Linzhi  
+
 **Purpose:** Demonstrate HTML, CSS, and JavaScript integration for front-end design, incorporating dark mode and responsive layout.
 
 ---
