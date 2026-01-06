@@ -9,12 +9,13 @@
 ---
 
 ## ⚙️ Folder Structure
-
+```
 T05_q5/
 ├─ index.html → Main webpage (HTML structure)
 ├─ style.css → Styling and layout design
 ├─ script.js → JavaScript for interactivity (dark mode toggle)
 └─ UX_reflection.md → UX analysis and wireframe layout
+```
 ---
 
 
